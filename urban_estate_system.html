@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Estate System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f4f6;
+    }
+    header {
+      background: #1f2937;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .container {
+      padding: 20px;
+    }
+    .plots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .plot {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .login, .register {
+      max-width: 400px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Urban Estate System</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#plots">Plots</a>
+      <a href="#login">Login</a>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <div class="container" id="home">
+    <h2>Welcome to Urban Estate System</h2>
+    <p>Explore and manage your dream property with ease.</p>
+  </div>
+
+  <div class="container" id="plots">
+    <h2>Available Plots</h2>
+    <div class="plots">
+      <div class="plot">
+        <h3>Plot A-101</h3>
+        <p>Location: Sector 10</p>
+        <p>Size: 200 sq. yd.</p>
+      </div>
+      <div class="plot">
+        <h3>Plot B-205</h3>
+        <p>Location: Sector 22</p>
+        <p>Size: 180 sq. yd.</p>
+      </div>
+      <div class="plot">
+        <h3>Plot C-303</h3>
+        <p>Location: Sector 15</p>
+        <p>Size: 240 sq. yd.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container login" id="login">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div class="container register" id="register">
+    <h2>Register</h2>
+    <form>
+      <input type="text" placeholder="Full Name">
+      <input type="text" placeholder="Email">
+      <input type="password" placeholder="Create Password">
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
